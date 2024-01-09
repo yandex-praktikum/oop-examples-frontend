@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="App created by Yandex.Practicum" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#000000" />
+		<meta name="theme-color" content="#ffffff" />
+		<title>Document</title>
+	</head>
+
+	<body class="page">
+		<a href="../index.html">Главная</a>
+		<a href="../lesson_9-3.html">Назад</a>
+		<h3>Slider</h3>
+		<div data-slider class="slider">
+			<div class="slider__container">
+				<div class="slider__content">
+					<div class="slider__item" id="one-slider" data-content-slider>
+						<img
+							src="https://images.unsplash.com/photo-1688760323395-49f47ab4aebc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+							alt="Горы"
+						/>
+					</div>
+					<div class="slider__item" id="two-slider" data-content-slider>
+						<img
+							src="https://images.unsplash.com/photo-1495805442109-bf1cf975750b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+							alt="Мост"
+						/>
+					</div>
+					<div class="slider__item" id="three-slider" data-content-slider>
+						<img
+							src="https://images.unsplash.com/photo-1603549619729-d6f60ded1a6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+							alt="Город"
+						/>
+					</div>
+				</div>
+				<button
+					class="slider__button_prev"
+					aria-label="Посмотреть предыдущий слайд"
+					data-trigger-slider
+					data-btn-prev
+				>
+					&#10094;
+				</button>
+				<button
+					class="slider__button_next"
+					aria-label="Посмотреть следующий слайд"
+					data-trigger-slider
+					data-btn-next
+				>
+					&#10095;
+				</button>
+			</div>
+			<div class="slider__dots">
+				<span class="slider__dot" data-trigger-slider="one-slider"></span>
+				<span class="slider__dot" data-trigger-slider="two-slider"></span>
+				<span class="slider__dot" data-trigger-slider="three-slider"></span>
+			</div>
+		</div>
+		<script src="./slider.js"></script>
+	</body>
+</html>

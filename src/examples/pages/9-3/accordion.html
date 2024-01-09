@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="App created by Yandex.Practicum" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#000000" />
+		<meta name="theme-color" content="#ffffff" />
+		<title>Document</title>
+	</head>
+
+	<body class="page">
+		<a href="../index.html">Главная</a>
+		<a href="../lesson_9-3.html">Назад</a>
+		<h3>Accordion</h3>
+		<div data-accordion>
+			<div class="accordion__item">
+				<h3>Что такое аккордеон?</h3>
+				<div
+					class="accordion__icon_wrapper"
+					data-trigger-accordion="accordion-one"
+				>
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<rect
+							x="11"
+							y="4"
+							width="2"
+							height="16"
+							rx="1"
+							fill="currentColor"
+						></rect>
+						<rect
+							x="4"
+							y="11"
+							width="16"
+							height="2"
+							rx="1"
+							fill="currentColor"
+						></rect>
+					</svg>
+				</div>
+			</div>
+			<div class="accordion__content" id="accordion-one" data-content-accordion>
+				<p>
+					Аккордеон — это компонент интерфейса, с помощью которого пользователи
+					могут раскрывать и просматривать скрытый под заголовком контент или
+					часть контента из связной группы.
+				</p>
+			</div>
+			<div class="item__line"></div>
+
+			<div class="accordion__item">
+				<h3>Что такое tooltip?</h3>
+				<div
+					class="accordion__icon_wrapper"
+					data-trigger-accordion="accordion-two"
+				>
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<rect
+							x="11"
+							y="4"
+							width="2"
+							height="16"
+							rx="1"
+							fill="currentColor"
+						></rect>
+						<rect
+							x="4"
+							y="11"
+							width="16"
+							height="2"
+							rx="1"
+							fill="currentColor"
+						></rect>
+					</svg>
+				</div>
+			</div>
+			<div class="accordion__content" id="accordion-two" data-content-accordion>
+				<p>
+					tooltip - это всплывающая подсказка, которая помогает пользователю
+					понять, как взаимодействовать с определённым объектом.
+				</p>
+			</div>
+			<div class="item__line"></div>
+
+			<div class="accordion__item">
+				<h3>Что такое слайдер?</h3>
+				<div
+					class="accordion__icon_wrapper"
+					data-trigger-accordion="accordion-three"
+				>
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<rect
+							x="11"
+							y="4"
+							width="2"
+							height="16"
+							rx="1"
+							fill="currentColor"
+						></rect>
+						<rect
+							x="4"
+							y="11"
+							width="16"
+							height="2"
+							rx="1"
+							fill="currentColor"
+						></rect>
+					</svg>
+				</div>
+			</div>
+			<div
+				class="accordion__content"
+				id="accordion-three"
+				data-content-accordion
+			>
+				<p>
+					Слайдер – это компонент интерфейса, представляющий собой блок
+					определенной ширины, основное предназначение - смена в ручном или
+					автоматическом режиме элементов - картинок, текстов и т.п.
+				</p>
+			</div>
+			<div class="item__line"></div>
+		</div>
+		<script src="./accordion.js"></script>
+	</body>
+</html>

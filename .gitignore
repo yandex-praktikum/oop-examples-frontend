@@ -1,0 +1,7 @@
+node_modules
+dist
+dist-examples
+coverage
+.idea
+.vscode
+*.log

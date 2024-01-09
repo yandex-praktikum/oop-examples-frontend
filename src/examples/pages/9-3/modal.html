@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="App created by Yandex.Practicum" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#000000" />
+		<meta name="theme-color" content="#ffffff" />
+		<title>Document</title>
+	</head>
+
+	<body class="page">
+		<a href="../index.html">Главная</a>
+		<a href="../lesson_9-3.html">Назад</a>
+		<h3>Modal</h3>
+		<button
+			type="button"
+			class="button button_outlined"
+			data-trigger-modal="modal-example"
+		>
+			MODAL
+		</button>
+
+		<!-- <div id="modal-example">
+        <div class="modal__container modal__container_up">
+            <button class="icon-xmark-solid modal__close" data-modal-close></button>
+            <p>Читая эту информацию, пользователь не теряет контекст основной информации сайта.</p>
+        </div>
+    </div> -->
+		<section id="modal-example">
+			<div class="modal-popup">
+				<button data-modal-close>
+					<span class="visually-hidden">Закрыть</span>
+				</button>
+				<p>
+					Читая эту информацию, пользователь не теряет контекст основной
+					информации сайта.
+				</p>
+			</div>
+		</section>
+		<script src="./modal.js"></script>
+	</body>
+</html>

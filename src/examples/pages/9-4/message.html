@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="App created by Yandex.Practicum" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#000000" />
+		<meta name="theme-color" content="#ffffff" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				box-sizing: border-box;
+			}
+			.container {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: calc(100vh - 100px);
+			}
+			.container__messages {
+				display: flex;
+				flex-direction: column-reverse;
+
+				background-color: #fff;
+				border: 1px solid #000;
+				height: 90%;
+				width: 100%;
+				overflow-y: auto;
+				box-sizing: border-box;
+			}
+			.message {
+				display: flex;
+				flex-direction: column;
+
+				background-color: #ffc802;
+				padding: 10px;
+				font-family: Arial, Helvetica, sans-serif;
+				width: 45%;
+				margin: 5px;
+				border-radius: 5px;
+			}
+			.message__user {
+				font-size: 12px;
+				color: #fff;
+			}
+			.right {
+				align-self: end;
+			}
+			.container__input {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #80d994;
+				height: 10%;
+				width: 100%;
+			}
+			form {
+				width: 100%;
+				font-size: 16px;
+			}
+			.form__container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 0.5rem;
+			}
+			.container__title {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #80d994;
+				height: 10%;
+				width: 100%;
+			}
+		</style>
+	</head>
+
+	<body class="page">
+		<div class="container">
+			<div class="container__title">
+				<div class="title"></div>
+			</div>
+			<div class="container__messages"></div>
+			<div class="container__input">
+				<form id="sendMessage">
+					<div class="form__container">
+						<input type="text" id="inpSend" />
+						<button class="button send_button" id="btnSend">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="./message.js"></script>
+	</body>
+</html>

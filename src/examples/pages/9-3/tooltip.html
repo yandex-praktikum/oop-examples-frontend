@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="App created by Yandex.Practicum" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#000000" />
+		<meta name="theme-color" content="#ffffff" />
+		<title>Document</title>
+	</head>
+
+	<body class="page">
+		<a href="../index.html">Главная</a>
+		<a href="../lesson_9-3.html">Назад</a>
+		<h3>Tooltip</h3>
+		<button
+			class="button__icon"
+			data-trigger-tooltip="one-tooltip"
+			data-tooltip-position="right"
+			data-tooltip-delay="0.6"
+			data-tooltip-delay-showing="3"
+		>
+			<span>
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M12.509 20.86C18.78 17.154 22 13.22 22 9.00002C22 2.99802 15.251 1.11002 12 5.10202C8.749 1.11002 2 2.99802 2 9.00002C2 13.22 5.219 17.153 11.491 20.86C11.6451 20.9512 11.8209 20.9993 12 20.9993C12.1791 20.9993 12.3549 20.9512 12.509 20.86ZM12.911 7.41202C14.677 3.51002 20 4.54202 20 9.00002C20 12.253 17.384 15.55 12 18.834C6.617 15.549 4 12.254 4 9.00002C4 4.54102 9.323 3.51002 11.089 7.41202C11.444 8.19602 12.556 8.19602 12.911 7.41202Z"
+						fill="currentColor"
+						fill-opacity="0.85"
+					></path>
+				</svg>
+			</span>
+		</button>
+
+		<div id="one-tooltip">Оставить отзыв</div>
+		<script src="./tooltip.js"></script>
+	</body>
+</html>

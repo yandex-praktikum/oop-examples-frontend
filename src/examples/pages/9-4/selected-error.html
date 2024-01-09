@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="App created by Yandex.Practicum" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#000000" />
+		<meta name="theme-color" content="#ffffff" />
+		<title>Document</title>
+	</head>
+
+	<body class="page">
+		<a href="../index.html">Главная</a>
+		<a href="../lesson_9-4.html">Назад</a>
+		<h3>Selected Error</h3>
+		<style>
+			.popup-selection-error {
+				position: absolute;
+			}
+		</style>
+		<p>
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+			ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+			dis parturient montes, nascetur ridiculus mus.
+		</p>
+
+		<div id="popupSelectionError" class="popup-selection-error widget_hidden">
+			<p class="container_text_error"></p>
+			<form action="">
+				<textarea
+					name="comment"
+					id="comment"
+					cols="30"
+					rows="3"
+					placeholder="В чём заключается ошибка?"
+				></textarea>
+				<button class="btn__error button send_button">
+					Сообщить об ошибке
+				</button>
+			</form>
+		</div>
+		<script src="./selected-error.js"></script>
+	</body>
+</html>
